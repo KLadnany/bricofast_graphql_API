@@ -1,0 +1,17 @@
+http://localhost:8080/graphql
+query getProfileById($id: ID){
+  profiles(id: $id) {
+    first_name,
+    last_name
+    email,
+    city {
+      name
+    },
+    zone {
+      name
+    },
+    job {
+      name
+    }
+  }
+}
